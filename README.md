@@ -6,6 +6,12 @@ By employing a hybrid payment engine (Prepaid Escrow balances for automatic oper
 
 ---
 
+## Deployed Contract (Stellar Testnet)
+- **Contract ID**: `CB5O37WBSY22AH4E2VNHBAINWDEOCA2N4EGI6YL2K4K5DQ46AVDVK26Z`
+- **Explorer Link**: [https://stellar.expert/explorer/testnet/contract/CB5O37WBSY22AH4E2VNHBAINWDEOCA2N4EGI6YL2K4K5DQ46AVDVK26Z](https://stellar.expert/explorer/testnet/contract/CB5O37WBSY22AH4E2VNHBAINWDEOCA2N4EGI6YL2K4K5DQ46AVDVK26Z)
+
+---
+
 ## Tech Stack
 - **Smart Contract**: Rust language using Stellar's official Soroban SDK (`21.0.0`) for memory-efficient and secure on-chain state transitions.
 - **Frontend**: Next.js 14 App Router with TypeScript for robust, server-rendered components.
@@ -90,7 +96,8 @@ stellar keys address my-key
      --source my-key \
      --network testnet
    ```
-2. **Copy the Contract ID**: The CLI will return a contract G-address ID (e.g., `CDLZFC3SY...`). Copy this address, as you will need to add it to your frontend configurations.
+2. **Copy the Contract ID**: The CLI will return the contract address ID. For this deployment, the ID is:
+   `CB5O37WBSY22AH4E2VNHBAINWDEOCA2N4EGI6YL2K4K5DQ46AVDVK26Z`
 
 ---
 
@@ -114,7 +121,7 @@ stellar keys address my-key
    ```
 2. Open `.env.local` and paste your deployed Contract ID from **Step 3** into the `NEXT_PUBLIC_CONTRACT_ID` variable:
    ```env
-   NEXT_PUBLIC_CONTRACT_ID=YOUR_DEPLOYED_CONTRACT_ID_HERE
+   NEXT_PUBLIC_CONTRACT_ID=CB5O37WBSY22AH4E2VNHBAINWDEOCA2N4EGI6YL2K4K5DQ46AVDVK26Z
    ```
 
 ---
